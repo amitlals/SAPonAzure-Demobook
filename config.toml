@@ -1,57 +1,38 @@
 baseURL = "/"
-languageCode = "en-US"
+canonifyURLs = true
 defaultContentLanguage = "en"
-
-title = "SAP on Azure - Tutorials and Guides"
+defaultContentLanguageInSubdir = true
+languageCode = "en-US"
 theme = "hugo-theme-learn"
 themesdir = "themes"
-#metaDataFormat = "yaml"
-canonifyURLs = true
-
-
-defaultContentLanguageInSubdir= true
-
-
-[params]
-#  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "SAP on Microsoft - Tutorials"
-  author = "Alexandre Bicas"
-  showVisitedLinks = true
-  alwaysopen = false
-  collapsibleMenu = true
-  disableBreadcrumb = false
-  disableNextPrev = false
-  disableLandingPageButton = false
-  disableMermaid = false
-  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
-  titleSeparator = "::"
- 
-
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
-
-[Languages]
+title = "SAP on Azure - Tutorials and Guides"
 [Languages.en]
+landingPageName = "<i class='fas fa-home'></i> Home"
+landingPageURL = "/"
+languageName = "English"
 title = "SAP on Microsoft - Tutorials"
 weight = 1
-languageName = "English"
-landingPageURL = "/"
-landingPageName = "<i class='fas fa-home'></i> Home"
-
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 url = "https://github.com/abicas/SapOnMicrosoftDemos"
 weight = 10
-
-
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
 identifier = "hugodoc"
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
 url = "https://gohugo.io/"
 weight = 20
-
-
-
-
-
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[params]
+alwaysopen = false
+author = "Alexandre Bicas"
+collapsibleMenu = true
+customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+description = "SAP on Microsoft - Tutorials"
+disableBreadcrumb = false
+disableLandingPageButton = false
+disableMermaid = false
+disableNextPrev = false
+showVisitedLinks = true
+titleSeparator = "::"
